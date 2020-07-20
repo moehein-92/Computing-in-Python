@@ -1,3 +1,9 @@
+#Write a function called check_winner which takes
+#as input a 2D list. It should return "X" if there are four
+#adjacent "X" values anywhere in the list (row, column,
+#diagonal); "O" if there are four adjacent "O" values
+#anywhere in the list; and None if there are neither.
+
 def check_winner(tuples):
 
     for total in range(5, -1, -1):
@@ -26,7 +32,6 @@ def check_winner(tuples):
                 return "O"
             else:
                 return None
-#Here are the ways Connect-4 is different from tic-tac-toe:
 #
 # - Connect-4 is played with 6 rows and 7 columns, not 3
 #   rows and 3 columns.
